@@ -4,16 +4,16 @@ $logo_path = "assets/images/logo_comcap.png";
 $logo_alt_text = "Comcap - CDO";
 
 // Conexão com o banco de dados
-$servername = "localhost";
-$username = "root"; // Seu usuário MySQL
-$password = ""; // Sua senha MySQL
-$dbname = "comcap";
+//$servername = "localhost";
+//$username = "root"; // Seu usuário MySQL
+//$password = ""; // Sua senha MySQL
+//$dbname = "comcap";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+//$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+//if ($conn->connect_error) {
+    //die("Connection failed: " . $conn->connect_error);
+//}
 
 // Verifica se o formulário de upload foi enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['document']) && isset($_POST['description'])) {
@@ -109,10 +109,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['document']) && isset(
       text-align: center;
       border-top: 3px solid #ccc;
       box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      margin-top: auto;
     }
 
     footer p {
+      margin-bottom: 0.3rem;
       font-size: 1.1rem;
     }
 
