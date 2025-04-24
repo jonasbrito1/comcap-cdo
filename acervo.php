@@ -1,29 +1,29 @@
 <?php
 $site_title = "Comcap - CDO - Central de Documentação";
 $logo_path = "assets/images/logo_comcap.png";
-$logo_alt_text = "Comcap - CDO";?>
+$logo_alt_text = "Comcap - CDO";
 
-// Conexão com o banco de dados
-//$servername = "localhost";
-//$username = "root"; // Seu usuário MySQL
-//$password = ""; // Sua senha MySQL
-//$dbname = "comcap";
+Conexão com o banco de dados
+$servername = "localhost";
+$username = "root"; // Seu usuário MySQL
+$password = ""; // Sua senha MySQL
+$dbname = "comcap";
 
-//$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-//if ($conn->connect_error) {
-    //die("Connection failed: " . $conn->connect_error);
-//}
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-// Consulta para obter documentos
-//$sql = "SELECT * FROM documentos";
-//$result = $conn->query($sql);
+Consulta para obter documentos
+$sql = "SELECT * FROM documentos";
+$result = $conn->query($sql);
 
-//if ($result === false) {
-    //echo "Erro ao consultar a base de dados: " . $conn->error;
-    //exit;
-//}
-//
+if ($result === false) {
+    echo "Erro ao consultar a base de dados: " . $conn->error;
+    exit;
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
