@@ -1,7 +1,7 @@
 <?php
 $site_title = "Comcap - CDO - Central de Documentação";
 $logo_path = "assets/images/logo_comcap.png";
-$logo_alt_text = "Comcap - CDO";
+$logo_alt_text = "Comcap - CDO";?>
 
 // Conexão com o banco de dados
 //$servername = "localhost";
@@ -16,14 +16,14 @@ $logo_alt_text = "Comcap - CDO";
 //}
 
 // Consulta para obter documentos
-$sql = "SELECT * FROM documentos";
-$result = $conn->query($sql);
+//$sql = "SELECT * FROM documentos";
+//$result = $conn->query($sql);
 
-if ($result === false) {
-    echo "Erro ao consultar a base de dados: " . $conn->error;
-    exit;
-}
-?>
+//if ($result === false) {
+    //echo "Erro ao consultar a base de dados: " . $conn->error;
+    //exit;
+//}
+//
 
 <!DOCTYPE html>
 <html lang="pt-br">
